@@ -1,0 +1,146 @@
+
+/* Reset CSS */  
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; /* Ensures padding/margin don't break layouts */  
+}  
+
+html {
+  font-size: 18px; /* Set the root font size */
+}
+
+h1 {
+  font-size: 2.5rem; /* 2.5 * 16 = 40px */
+}
+
+h2 {
+  font-size: 1.875rem; /* 1.875 * 16 = 30px */
+}
+
+p {
+  font-size: 1rem; /* 1 * 16 = 16px */}
+
+/* Global Styles */  
+body {  
+    font-family: 'Cambria', serif; /* Use a web-safe font */  
+    line-height: 1.6; /* Improves readability */  
+    color: #35424a; /* Dark gray text (easier on eyes than black) */  
+    background-color: #fee5fa; /* Light pink background */  
+}  
+
+a {  
+    text-decoration: none; /* Remove default underline from links */  
+    color: #35424a;  
+}  
+
+/* Container to center content (optional but common) */  
+.container {  
+    max-width: 1200px; /* Limits content width on large screens */  
+    margin: 0 auto; /* Centers content horizontally */  
+    padding: 0 20px; /* Adds space on left/right for small screens */  
+}  
+
+/* Responsive Design: Mobile-first approach */  
+@media (max-width: 768px) {  
+    /* Styles for screens smaller than 768px (e.g., phones) */  
+
+}  
+
+/* Header Styles */  
+header {  
+    text-align: center;
+    background: #35424a; /* Dark blue-gray background */  
+    color: #fee5fa;  
+    padding: 1rem 0; /* Vertical padding */  
+    margin-bottom: 1rem
+}  
+
+/* Navigation Menu */  
+nav ul {  
+    list-style: none; /* Remove bullet points */  
+    display: flex; /* Arrange links horizontally (flexbox) */  
+    justify-content: space-evenly 
+   
+}  
+
+nav a {  
+    color: #fee5fa;  
+    font-weight: bold;  
+    padding: 0.5rem 0; /* Vertical padding for hover effect */  
+}  
+
+/* Highlight active page */  
+nav a.active {  
+    border-bottom: 3px solid #fdb0f0; /* Orange underline */  
+}  
+
+nav a:hover {  
+    color: #fdb0f0; /* Orange color on hover */  
+}  
+
+/* Responsive Navigation (Mobile) */  
+@media (max-width: 768px) {  
+    nav ul {  
+        flex-direction: column; /* Stack links vertically on mobile */  
+        gap: 1rem;  
+        text-align: center;  
+    }  
+}  
+
+
+.btn {  
+    display: inline-block;  
+    background: #fdb0f0;  
+    color: #fee5fa;  
+    padding: 0.7rem 2rem;  
+    border: none;  
+    cursor: pointer;  
+    border-radius: 5px;  
+}  
+
+.btn:hover {  
+    background: #d44115;  
+}  
+
+/* Service Cards */  
+.services {  
+    padding: 3rem 0;  
+}  
+
+.service-cards {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */  
+    gap: 2rem;  
+}  
+
+.card {  
+    background: white;  
+    padding: 2rem;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */  
+}  
+
+/* Responsive Cards (Mobile) */  
+@media (max-width: 768px) {  
+    .service-cards {  
+        grid-template-columns: 1fr; /* 1 column on mobile */  
+    }  
+}  
+
+img {  
+    float: right;
+    margin-left: 15px;
+    max-width: 100%; /* Image never exceeds parent container width */  
+    height: auto; /* Maintain aspect ratio */  
+}  
+
+
+
+.spaced-para {
+     margin-bottom: 1rem;
+  }
+
+  .double-spaced-para {
+     margin-bottom: 2rem;
+  }
